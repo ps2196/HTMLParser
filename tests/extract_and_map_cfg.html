@@ -1,0 +1,19 @@
+<config>
+
+    <extract>
+        <tag tag_name="car"/>
+    </extract>
+
+    <map>
+		<tag tag_name="car" module = 'tests.car' class_name="Car">
+			<attr attr_name="brand" field="brand"/>
+			<attr attr_name="model" field="model_name"/>
+			<tag tag_name="engine" class_name="Engine" module = 'tests.car'>
+				<attr attr_name="power" field="power"/>
+				<attr attr_name="volume" field="volume"/>
+				<attr attr_name="type" field="type"/>
+			</tag>
+        </tag>
+	</map>
+
+</config>
